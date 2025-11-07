@@ -1,0 +1,99 @@
+{
+  "name": "text-converter",
+  "displayName": "Text Converter",
+  "description": "Quickly convert selected text between different cases — upper, lower, camel, snake, kebab, title, and more.",
+  "version": "1.0.0",
+  "publisher": "Michael Kotkin",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": ["Other"],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "text-converter.toUpperCase",
+        "title": "Text Converter: To UPPER CASE"
+      },
+      {
+        "command": "text-converter.toLowerCase",
+        "title": "Text Converter: To lower case"
+      },
+      {
+        "command": "text-converter.toCamelCase",
+        "title": "Text Converter: To camelCase"
+      },
+      {
+        "command": "text-converter.toSnakeCase",
+        "title": "Text Converter: To snake_case"
+      },
+      {
+        "command": "text-converter.toKebabCase",
+        "title": "Text Converter: To kebab-case"
+      },
+      {
+        "command": "text-converter.toTitleCase",
+        "title": "Text Converter: To Title Case"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "text-converter.toUpperCase",
+          "group": "text-converter"
+        },
+        {
+          "command": "text-converter.toLowerCase",
+          "group": "text-converter"
+        },
+        {
+          "command": "text-converter.toCamelCase",
+          "group": "text-converter"
+        },
+        {
+          "command": "text-converter.toSnakeCase",
+          "group": "text-converter"
+        },
+        {
+          "command": "text-converter.toKebabCase",
+          "group": "text-converter"
+        },
+        {
+          "command": "text-converter.toTitleCase",
+          "group": "text-converter"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package",
+    "docs": "typedoc --out docs src/extension.ts",
+    "docs:watch": "typedoc --watch --out docs src/extension.ts",
+    "docs:serve": "npx serve docs"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.90.0",
+    "typescript": "^5.3.0",
+    "vsce": "^2.15.0",
+    "typedoc": "^0.25.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mk0t1k/text-converter"
+  },
+  "homepage": "https://github.com/your-username/text-converter#readme",
+  "keywords": [
+    "text",
+    "converter",
+    "case",
+    "uppercase",
+    "lowercase",
+    "camelcase",
+    "snakecase",
+    "kebabcase",
+    "titlecase"
+  ]
+}
