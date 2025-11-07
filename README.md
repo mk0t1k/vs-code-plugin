@@ -1,4 +1,4 @@
-# 🚀 Case Converter - VS Code Extension
+## Case Converter - VS Code Extension
 
 <div align="center">
 
@@ -22,7 +22,7 @@
 
 ---
 
-## 🎯 Quick Start
+## Quick Start
 
 ### Method 1: Command Palette 🎹
 1. **Select** the text you want to convert
